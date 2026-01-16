@@ -1,15 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- Bootstrap CSS (CDN) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Optional: Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Louis Jacobs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-<p>Louis</p>
+
+<nav>
+    <div class="nav-container">
+        <a href="#home" class="nav-logo">Home</a>
+        <ul>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#projects">Projecten</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header id="home" class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>Portfolio</h1>
+            <h2 class="name">Louis Jacobs</h2>
+            <p class="location">Bilzen, 3740</p>
+
+            <div class="social-icons">
+                <a class="tooltip-container">
+                    <i class="fas fa-phone"></i>
+                    <span class="tooltip-text">+32 468 35 81 56</span>
+                </a>
+
+                <a href="mailto:louisjacobs329@gmail.com" class="tooltip-container">
+                    <i class="fas fa-envelope"></i>
+                    <span class="tooltip-text">louisjacobs329@gmail.com</span>
+                </a>
+                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com" target="_blank" title="Github"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/Beter.png" alt="Louis Jacobs">
+        </div>
+    </div>
+</header>
+
+<section id="about" class="dark-section">
+    <div class="container split-view">
+        <div class="text-block">
+            <h3>About me</h3>
+            <p>Ik ben Louis Jacobs, 20 jaar oud. Ik studeer Digitale Vormgeving omdat ik mijn passie voor designs naar een hoger niveau wil brengen. Ik ben aan de richting begonnen met een kleine rugzak die ik in mijn vrije tijd al heb kunnen opbouwen. Nu ben ik klaar voor een stap verder te gaan en hier mijn werk van te maken.</p>
+        </div>
+        <div class="image-block">
+            <img src="assets/about%20me.jpeg" alt="Louis aan het koken">
+        </div>
+    </div>
+</section>
+
+<section class="hobbies">
+    <div class="container">
+        <h3 class="right-align">Hobbies</h3>
+        <div class="hobby-grid">
+            <div class="hobby-text">
+                <p>Naast het maken van designs heb ik nog 2 grote passies. Zoals je hiernaast kan zien is dat voetbal en dj.
+                Ik voetbal al zolang als ik mij kan herinneren en het maakt een gigantisch deel uit van mijn vrije tijd.
+                Daarnaast ben ik al 3 jaar dj. Het begon allemaal heel klein en lokaal, maar ondertussen sta ik soms op plakken zoals het Karrewiel,
+                waar wel 600 mensen in kunnen.</p>
+            </div>
+            <div class="hobby-images">
+                <img src="assets/DJ1.jpeg" alt="DJ optreden" class="img-top-right">
+                <img src="assets/DJ2.jpeg" alt="DJ in studio" class="img-bottom-left">
+                <img src="assets/Voetbal.jpeg" alt="Voetbal" class="img-bottom-right">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="dark-section">
+    <div class="container">
+        <h3 class="right-align">Projecten</h3>
+
+        <div class="project-item">
+            <img src="assets/fuif.png" alt="Trick 'N Beats Poster" class="project-poster">
+            <div class="project-info">
+                <h4>Trick ‘N Beats</h4>
+                <p>Dit leuke project was een gigantisch succes. Mijn KSA en ik organiseerde een fuif in het jeugdhuis van Bilzen. Het was een Halloween gerelateerde fuif, waardoor we veel aandacht trokken met onze reclame. Mijn onderdeel van dit project was het jeugdhuis afhuren op de gewenste datum, en zorgen dat er DJ’s geboekt waren.</p>
+            </div>
+        </div>
+
+        <div class="project-item reverse">
+            <div class="project-info">
+                <h4>Podcast PXL</h4>
+                <p>Twee jaar geleden nam ik met 2 medestudenten communicatie, een podcast op met de youtuber 'Senne Siaz'. Dit was enorm leerrijke ervaring. Mijn onderdeel van de podcast was de audiofiles bewerken de microfoon afstellen. Het gesprek zelf was zeer aangenaam. Het bijzondere verhaal dat de youtuber had meegemaakt, maakte het project zeer interessant en leuk om te doen.</p>
+            </div>
+            <img src="assets/podcast.jpeg" alt="Podcast opname" class="project-poster">
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <h3>Contact</h3>
+    <div class="social-icons large">
+        <a class="tooltip-container">
+            <i class="fas fa-phone"></i>
+            <span class="tooltip-text">+32 468 35 81 56</span>
+        </a>
+
+        <a href="mailto:louisjacobs329@gmail.com" class="tooltip-container">
+            <i class="fas fa-envelope"></i>
+            <span class="tooltip-text">louisjacobs329@gmail.com</span>
+        </a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="footer-bottom">
+        <p>Bilzen, 3740</p>
+    </div>
+</footer>
+
 </body>
 </html>

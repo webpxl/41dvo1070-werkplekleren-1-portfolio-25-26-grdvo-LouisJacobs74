@@ -1,0 +1,322 @@
+/* Reset & Basis */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D3D3D3; /* De lichtgrijze achtergrond */
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigatie */
+nav {
+    background-color: #4A4A4A;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #cccccc; /* Subtiele hover */
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    color: white;
+    line-height: 0.8;
+}
+
+.hero-text .name {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    color: white;
+    margin-left: 100px;
+}
+
+.hero-text .location {
+    margin-top: 40px;
+    font-size: 24px;
+    color: white;
+}
+
+.hero-image img {
+    background-color: #BEBEBE;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(100%); /* Zoals in het ontwerp */
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    font-size: 30px;
+    color: #4A4A4A;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #ffffff;
+}
+
+/* Secties Algemeen */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.dark-section {
+    background-color: #4A4A4A;
+    color: white;
+    margin: 40px 0;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.right-align {
+    text-align: right;
+}
+
+/* About Section */
+.split-view {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.text-block {
+    flex: 1;
+}
+
+.image-block img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px rgba(0,0,0,0.1);
+}
+
+/* Hobbies Layout */
+.hobby-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.hobby-images {
+    position: relative;
+    height: 400px;
+}
+
+.hobby-images img {
+    position: absolute;
+    width: 250px;
+    border-radius: 10px;
+    transition: z-index 0.3s;
+}
+
+.img-top-right { top: 0; right: 0; }
+.img-bottom-left { bottom: 0; left: -50px; width: 280px !important; }
+.img-bottom-right { bottom: -20px; right: 0; }
+
+/* Projecten */
+.project-item {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: center;
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.project-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.project-poster {
+    width: 200px;
+    border-radius: 8px;
+}
+
+.project-info h4 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Contact / Footer */
+footer {
+    text-align: center;
+    padding-bottom: 0;
+}
+
+footer h3 {
+    color: white;
+}
+
+.social-icons.large a {
+    font-size: 45px;
+    margin: 0 15px;
+}
+
+.footer-bottom {
+    background-color: #4A4A4A;
+    color: white;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero-content, .split-view, .project-item, .hobby-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text .name { margin-left: 0; }
+    .hobby-images { height: auto; display: block; }
+    .hobby-images img { position: static; width: 100% !important; margin-bottom: 10px; }
+}
+/* Contact / Footer Sectie */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Zorgt dat alles horizontaal in het midden staat */
+    justify-content: center;
+    padding-top: 80px;
+    background-color: #D3D3D3; /* Zelfde kleur als de rest van de lichte achtergrond */
+}
+
+#contact h3 {
+    color: white; /* De witte 'Contact' titel uit je ontwerp */
+    font-size: 70px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* De container voor de iconen */
+.social-icons.large {
+    display: flex;
+    justify-content: center; /* Zet de icoontjes in het midden van de rij */
+    gap: 30px; /* Ruimte tussen de icoontjes */
+    margin-bottom: 80px;
+}
+
+.social-icons.large a {
+    font-size: 50px; /* Grotere iconen zoals in het screenshot */
+    color: #4A4A4A;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons.large a:hover {
+    transform: scale(1.15);
+    color: #ffffff; /* Kleurverandering bij hover */
+}
+
+/* De donkergrijze balk onderaan met de locatie */
+.footer-bottom {
+    width: 100%;
+    background-color: #4A4A4A;
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+}
+/* Container voor de link en het tekstwolkje */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Het kaartje/tekstwolkje zelf */
+.tooltip-text {
+    visibility: hidden;
+    width: auto;
+    min-width: 150px;
+    background-color: #333; /* Donkere achtergrond voor contrast */
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 12px;
+    position: absolute;
+    z-index: 10;
+    bottom: 125%; /* Verschijnt boven het icoontje */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    white-space: nowrap; /* Zorgt dat het adres op één lijn blijft */
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Een klein driehoekje onderaan het kaartje */
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+/* Laat het kaartje zien bij hover */
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
